@@ -8,6 +8,8 @@ Adds a Mapbox map to the CMS with a draggable marker to allow content authors to
 
 `composer require bigfork/silverstripe-mapboxfield:*`
 
+This branch targets SilverStripe CMS 6 and requires PHP 8.3 or later.
+
 ## Configuration
 
 ```yml

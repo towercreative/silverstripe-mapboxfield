@@ -2,7 +2,6 @@
 
 namespace Bigfork\SilverStripeMapboxField;
 
-use http\Exception\InvalidArgumentException;
 use SilverStripe\Forms\CompositeField;
 use SilverStripe\Forms\HiddenField;
 
@@ -32,7 +31,6 @@ class MapboxField extends CompositeField
 
     public function getMapboxStyle()
     {
-        $config = MapboxField::config();
-        return $config->style;
+        return self::config()->get('style');
     }
 }
